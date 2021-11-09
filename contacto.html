@@ -23,7 +23,7 @@
                     <li><a href="#">Quienes Somos</a></li>
                     <li><a href="areas.html">Áreas de práctica</a></li>
                     <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,27 +31,32 @@
     </header>
 
     <main>
-        <img src="./media/compromiso.jpg" alt="">
 
-        <section class="valores">
-            <article>MISION</article>
-            <article>VISION</article>
-        </section>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">Correo electrónico:</label>
+               <input type="email" id="mail" name="user_mail">
+             </li>
+             <li>
+                <label for="name">Telefono:</label>
+                <input type="text" id="name" name="user_name">
+              </li>
+              <li>
+                <label for="name">Asunto:</label>
+                <input type="text" id="name" name="user_name">
+              </li>
+             <li>
+               <label for="msg">Mensaje:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+            </ul>
+        </form>
 
-        <img src="./media/tica.jpg" alt="">
-
-        <section class="areas">
-            <h2>Areas de práctica</h2>
-            <div class="areasDePractica">
-                <button><a href="areas.html">Accidentes de Transito</a></button>
-                <button><a href="areas.html">Reclamos contractuales</a></button>
-                <button><a href="areas.html">Accidentes de trabajo</a></button>
-                <button><a href="areas.html">Defensa del consumidor</a></button>
-                <button><a href="areas.html">Sucesiones</a></button>
-            </div>
-        </section>
-
-        <button><a href="contacto.html">Contactanos</a></button>
     </main>
 
     <footer>
