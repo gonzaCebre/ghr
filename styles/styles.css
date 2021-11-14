@@ -1,0 +1,53 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.banner {
+    width: 50%;
+    margin: 2rem;
+
+}
+
+.mision-vision{
+    text-align: justify;
+}
+
+.contactanos-boton {
+    text-align: center;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(175, 175, 175);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
+
+.botonAreas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10rem;
+    height:2.7rem;
+    background-color: rgb(175, 175, 175);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+.controladores{
+    background-color: blue;
+    border-radius: 50%;
+    padding: 1rem;
+}
