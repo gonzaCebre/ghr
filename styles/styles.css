@@ -7,6 +7,15 @@ h1, h2 {
     margin: 1rem auto;
 }
 
+.redes{
+    background-color: white;
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
 .banner {
     width: 50%;
     margin: 2rem;
@@ -50,4 +59,8 @@ h1, h2 {
     background-color: blue;
     border-radius: 50%;
     padding: 1rem;
+}
+
+footer p{
+    font-weight: 600;
 }
