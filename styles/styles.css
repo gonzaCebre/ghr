@@ -8,7 +8,28 @@ h1, h2 {
 }
 
 .redes{
-    background-color: white;
+    background-color: transparent;
+    width: 20%;
+}
+
+
+.redes-icono {
+    width: 20px;
+}
+
+.redes-icono-fondo {
+    text-decoration: none;
+    background-color: rgb(175, 175, 175);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
 }
 
 main{
@@ -28,15 +49,23 @@ main{
 
 .contactanos-boton {
     text-align: center;
-    width: 10rem;
-    height: 2.5rem;
-    background-color: rgb(175, 175, 175);
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(151, 151, 151);
     border-radius: 2rem;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     text-decoration: none;
     color: white;
     margin: 1rem;
+    margin-top: 2rem;
+}
+
+.grande{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    margin-top: 0;
 }
 
 .botonAreas {
@@ -61,6 +90,33 @@ main{
     padding: 1rem;
 }
 
+.subtitulo-areas{
+    width: 50%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.titulo-areas {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.asesoramiento-titulo{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.testimonio {
+    font-size: 3rem;
+}
+
 footer p{
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.negrita {
     font-weight: 600;
 }

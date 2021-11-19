@@ -15,36 +15,52 @@
 <body>
 
     <header class="fixed-top">
-        <!-- estos botones se reemplazaran por iconos -->
-        <div class="redes">
-            <button>Instagram</button>
-            <button>Whatsapp</button>
-            <button>Linkedin</button>
-        </div>
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+            <div class="container">
 
-        
-            <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-            
-            <!-- logo menu bootstrap -->        
+                <!-- logo menu bootstrap -->
                 <a class="navbar-brand" href="index.html">
-                <img src="#" alt="GHR" width="30" height="24">
+                    <img src="../media/redes/Logo PNG.png" alt="GHR" class="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="collapse navbar-collapse d-flex flex-column align-items-end" id="navbarTogglerDemo02">
+
+                    <div class="redes d-flex justify-content-between">
+                        <div class="redes-icono-fondo">
+                            <a href="https://www.instagram.com/abogadoenseguros.ghr/" target="_blank">
+                                <img src="../media/redes/instagram(1).png" alt="logo instagram" class="redes-icono">
+                            </a>
+                        </div>
+
+                        <div class="redes-icono-fondo">
+                            <a href="https://api.whatsapp.com/send?phone=+54" target="_blank">
+                                <img src="../media/redes/whatsapp.png" alt="logo whatsapp" class="redes-icono">
+                            </a>
+                        </div>
+                        <div class="redes-icono-fondo">
+                            <a href="./contacto.html" target="_blank">
+                                <img src="../media/redes/correo-abierto.png" alt="logo correo" class="redes-icono">
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <a class="nav-item nav-link" aria-current="page" href="../index.html">INICIO</a>
-                        <a class="nav-item nav-link  active" href="./quienesSomos.html">QUIENES SOMOS</a>
+                        <a class="nav-item nav-link active" href="./quienesSomos.html">QUIENES SOMOS</a>
                         <a class="nav-item nav-link" href="./areasDePractica.html">AREAS DE PRACTICA</a>
                         <a class="nav-item nav-link" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
                         <a class="nav-item nav-link" href="./contacto.html">CONTACTANOS</a>
                     </div>
-                    
+
                 </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <main class="container-fluid d-flex flex-column align-items-center">
@@ -89,34 +105,53 @@
     </main>
 
     <footer class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid"> 
-            <div> 
-                <img src="#" alt="GHR" width="30" height="24">
+        <div class="container">
+            <div>
+                <img src="../media/redes/Logo PNG.png" alt="GHR" class="logo">
             </div>
             <div>
                 <p>Contactanos</p>
-                <ul>
-                    <!-- cambiar por iconos -->
-                    <li><a href="#">icono whatsapp </a></li>
-                    <li><a href="#">icono email </a></li>
-                </ul>
+                <div class="d-flex flex-column">
+
+                    <div class="d-flex">
+                        <a href="https://api.whatsapp.com/send?phone=+54" target="_blank">
+                            <img src="../media/redes/whatsapp.png" alt="logo whatsapp" class="redes-icono">
+                        </a>
+                        <p>1198765432</p>
+                    </div>
+
+                    <div class="d-flex">
+                        <a href="./contacto.html" target="_blank">
+                            <img src="../media/redes/correo-abierto.png" alt="logo correo" class="redes-icono">
+                        </a>
+                        <p>ghr@gmail.com</p>
+                    </div>
+                </div>
             </div>
             <div>
                 <p>Áreas de práctica</p>
-                <ul>
-                    <li><a href="./html/areasDePractica.html">Accidentes de transito</a></li>
-                    <li><a href="./html/areasDePractica.html">Reclamos contractuales</a></li>
-                    <li><a href="./html/areasDePractica.html">Accidentes de trabajos</a></li>
-                </ul>
+                <div class="d-flex">
+                    <ul>
+                        <li><a href="./areasDePractica.html">Accidentes de transito</a></li>
+                        <li><a href="./areasDePractica.html">Reclamos contractuales</a></li>
+                        <li><a href="./areasDePractica.html">Accidentes de trabajos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./areasDePractica.html">Sucesiones</a></li>
+                        <li class=><a href="./areasDePractica.html">Defensa al consumidor</a></li>
+                        <li><a href="./contacto.html">Solicitar asesoramiento</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div>
-                <ul>
-                    <li><a href="./html/areasDePractica.html">Sucesiones</a></li>
-                    <li class=><a href="./html/areasDePractica.html">Defensa al consumidor</a></li>
-                    <li><a href="./html/contacto.html">Solicitar asesoramiento</a></li>
-                </ul>
+
+            <div class="d-flex">
+                <p>Seguinos en las redes</p>
+                <a href="https://www.instagram.com/abogadoenseguros.ghr/" target="_blank">
+                    <img src="../media/redes/instagram(1).png" alt="logo instagram" class="redes-icono">
+                </a>
             </div>
-    
+
         </div>
     </footer>
 
