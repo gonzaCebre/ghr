@@ -1,5 +1,24 @@
 *{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    height: 180px;
+}
+
+.navbar {
+    height: 100%;
+    border-bottom: 4px solid rgb(30, 44, 81);
+}
+
+
+.linkMenu { 
+    text-align: center;
+    border-right: 1.5px solid rgb(30, 44, 81);
+    height: 50%;
+    display: flex;
+    align-items: center;
 }
 
 h1, h2 {
@@ -9,7 +28,6 @@ h1, h2 {
 
 .redes{
     background-color: transparent;
-    width: 20%;
 }
 
 
@@ -20,8 +38,10 @@ h1, h2 {
 .redes-icono-fondo {
     text-decoration: none;
     background-color: rgb(175, 175, 175);
-    width: 40px;
-    height: 40px;
+    border: 1px solid rgb(30, 44, 81);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -29,7 +49,7 @@ h1, h2 {
 }
 
 .logo {
-    height: 55px;
+    width: 100%;
 }
 
 main{
@@ -119,4 +139,8 @@ footer a {
 
 .negrita {
     font-weight: 600;
+}
+
+.barra {
+    height: 100%;
 }
