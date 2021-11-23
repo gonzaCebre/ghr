@@ -1,146 +1,122 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
 
-header{
-    height: 180px;
-}
+header {
+  height: 180px; }
 
 .navbar {
-    height: 100%;
-    border-bottom: 4px solid rgb(30, 44, 81);
-}
+  height: 100%;
+  border-bottom: 4px solid #1e2c51; }
 
-
-.linkMenu { 
-    text-align: center;
-    border-right: 1.5px solid rgb(30, 44, 81);
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
+.linkMenu {
+  text-align: center;
+  border-right: 1.5px solid #1e2c51;
+  height: 50%;
+  display: flex;
+  align-items: center; }
 
 h1, h2 {
-    text-align: center;
-    margin: 1rem auto;
-}
+  text-align: center;
+  margin: 1rem auto; }
 
-.redes{
-    background-color: transparent;
-}
-
+.redes {
+  background-color: transparent;
+  margin-top: 15px; }
 
 .redes-icono {
-    width: 20px;
-}
+  width: 20px; }
 
 .redes-icono-fondo {
-    text-decoration: none;
-    background-color: rgb(175, 175, 175);
-    border: 1px solid rgb(30, 44, 81);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  text-decoration: none;
+  background-color: #afafaf;
+  border: 1px solid #1e2c51;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .logo {
-    width: 100%;
-}
+  width: 100%; }
 
-main{
-    margin-top: 100px;
-    margin-bottom: 150px;
-}
+main {
+  margin-top: 100px;
+  margin-bottom: 150px; }
 
 .banner {
-    width: 50%;
-    margin: 2rem;
+  width: 50%;
+  margin: 2rem; }
 
-}
-
-.mision-vision{
-    text-align: justify;
-}
+.mision-vision {
+  text-align: justify; }
 
 .contactanos-boton {
-    text-align: center;
-    width: 12rem;
-    height: 3rem;
-    background-color: rgb(151, 151, 151);
-    border-radius: 2rem;
-    text-transform: uppercase;
-    padding: 0.7rem 1rem;
-    text-decoration: none;
-    color: white;
-    margin: 1rem;
-    margin-top: 2rem;
-}
+  text-align: center;
+  width: 12rem;
+  height: 3rem;
+  background-color: #979797;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  margin-top: 2rem; }
 
-.grande{
-    width: 15rem;
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-top: 0;
-}
+.grande {
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  margin-top: 0; }
 
 .botonAreas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 10rem;
-    height:2.7rem;
-    background-color: rgb(175, 175, 175);
-    border-radius: 2rem;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: white;
-    margin: 1rem;
-    font-size: 0.8rem;
-}
-.controladores{
-    background-color: blue;
-    border-radius: 50%;
-    padding: 1rem;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10rem;
+  height: 2.7rem;
+  background-color: #afafaf;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  font-size: 0.8rem; }
 
-.subtitulo-areas{
-    width: 50%;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
+.controladores {
+  background-color: blue;
+  border-radius: 50%;
+  padding: 1rem; }
+
+.subtitulo-areas {
+  width: 50%;
+  font-weight: 600;
+  font-size: 1.5rem; }
+
 .titulo-areas {
-    font-weight: 600;
-    font-size: 1.2rem;
-}
+  font-weight: 600;
+  font-size: 1.2rem; }
 
-.asesoramiento-titulo{
-    font-size: 2rem;
-    text-align: center;
-}
+.asesoramiento-titulo {
+  font-size: 2rem;
+  text-align: center; }
 
 .testimonio {
-    font-size: 3rem;
-}
+  font-size: 3rem; }
 
-footer p{
-    font-weight: 600;
-}
+footer p {
+  font-weight: 600; }
 
 footer a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 .negrita {
-    font-weight: 600;
-}
+  font-weight: 600; }
 
 .barra {
-    height: 100%;
-}
+  height: 100%; }
