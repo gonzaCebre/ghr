@@ -1,50 +1,19 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; }
-
-header {
-  height: 180px; }
-
-.navbar {
-  height: 100%;
-  border-bottom: 4px solid #1e2c51; }
-
-.linkMenu {
-  text-align: center;
-  border-right: 1.5px solid #1e2c51;
-  height: 50%;
-  display: flex;
-  align-items: center; }
+  font-size: 14px; }
 
 h1, h2 {
   text-align: center;
   margin: 1rem auto; }
 
-.redes {
-  background-color: transparent;
-  margin-top: 15px; }
+h1 {
+  font-size: 2rem; }
 
-.redes-icono {
-  width: 20px; }
-
-.redes-icono-fondo {
-  text-decoration: none;
-  background-color: #afafaf;
-  border: 1px solid #1e2c51;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.logo {
-  width: 100%; }
+h2 {
+  font-size: 24px; }
 
 main {
-  margin-top: 100px;
-  margin-bottom: 150px; }
+  margin-top: 200px; }
 
 .banner {
   width: 50%;
@@ -54,17 +23,20 @@ main {
   text-align: justify; }
 
 .contactanos-boton {
+  font-size: 30px;
+  font-weight: 600;
   text-align: center;
-  width: 12rem;
-  height: 3rem;
-  background-color: #979797;
+  color: white;
+  width: 260px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2c51;
   border-radius: 2rem;
   text-transform: uppercase;
-  padding: 0.7rem 1rem;
   text-decoration: none;
-  color: white;
-  margin: 1rem;
-  margin-top: 2rem; }
+  margin-bottom: 3rem; }
 
 .grande {
   width: 15rem;
@@ -88,35 +60,130 @@ main {
   margin: 1rem;
   font-size: 0.8rem; }
 
-.controladores {
-  background-color: blue;
-  border-radius: 50%;
-  padding: 1rem; }
-
-.subtitulo-areas {
-  width: 50%;
-  font-weight: 600;
-  font-size: 1.5rem; }
-
-.titulo-areas {
-  font-weight: 600;
-  font-size: 1.2rem; }
-
-.asesoramiento-titulo {
-  font-size: 2rem;
-  text-align: center; }
-
-.testimonio {
-  font-size: 3rem; }
-
-footer p {
-  font-weight: 600; }
-
-footer a {
-  text-decoration: none; }
-
 .negrita {
   font-weight: 600; }
 
 .barra {
   height: 100%; }
+
+.hr-proposito {
+  width: 20%;
+  height: 5px;
+  background-color: #1e2c51;
+  margin-bottom: 2rem; }
+
+.hr {
+  width: 30%;
+  height: 5px;
+  background-color: #1e2c51;
+  margin-bottom: 2rem; }
+
+.servicios {
+  width: fit-content;
+  font-size: 24px;
+  padding: 13px 64px;
+  border: 1px solid #1e2c51;
+  border-radius: 25px; }
+  .servicios-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-top: 5rem; }
+  .servicios-area {
+    height: 24px;
+    margin-right: 2rem; }
+    .servicios-area .areas {
+      font-size: 20px; }
+
+.check {
+  width: 24px;
+  height: 24px; }
+
+.subtitulo-areas {
+  width: 50%;
+  font-size: 20PX; }
+
+.titulo-areas {
+  font-size: 24px;
+  margin-bottom: 0; }
+
+.asesoramiento-titulo {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center; }
+
+.hr-areas {
+  width: 20%;
+  height: 5px;
+  background-color: #1e2c51;
+  margin-bottom: 2rem; }
+
+.controladores {
+  background-color: #1e2c51;
+  border-radius: 50%;
+  padding: 1rem; }
+
+.testimonio-div {
+  width: 70%; }
+
+.testimonio {
+  font-size: 20px;
+  color: #1e2c51; }
+
+header {
+  height: 180px; }
+  header .navbar {
+    height: 100%;
+    border-bottom: 4px solid #1e2c51; }
+    header .navbar .linkMenu {
+      text-align: center;
+      border-right: 1.5px solid #1e2c51;
+      height: 50%;
+      display: flex;
+      align-items: center; }
+
+.logo {
+  width: 100%; }
+
+.redes {
+  background-color: transparent;
+  margin-top: 15px; }
+  .redes-icono {
+    text-decoration: none;
+    background-color: #afafaf;
+    border: 1px solid #1e2c51;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .redes-icono-logo {
+      width: 20px; }
+
+footer {
+  height: 200px;
+  font-size: 14px;
+  border-top: 4px solid #1e2c51; }
+  footer p {
+    font-size: 14px; }
+  footer .footer-contactanos {
+    height: 100px; }
+    footer .footer-contactanos .redes-icono {
+      margin-right: 15px; }
+  footer ul {
+    list-style-type: none;
+    margin-left: -27px; }
+    footer ul .asesoramiento {
+      text-decoration: underline;
+      font-weight: 600; }
+  footer a {
+    text-decoration: none;
+    font-size: 12px;
+    color: black; }
+  footer .seguinos {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 1.7rem; }
