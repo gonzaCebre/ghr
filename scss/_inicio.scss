@@ -1,0 +1,47 @@
+.hr-proposito {
+    width: 20%;
+    height: 5px;
+    background-color: $colorAcentoOscuro;
+    margin-bottom: 2rem;
+}
+
+.hr{
+    width: 30%;
+    height: 5px;
+    background-color: $colorAcentoOscuro;
+    margin-bottom: 2rem;
+}
+
+.servicios {
+    width: fit-content;
+    font-size: 24px;
+    padding: 13px 64px;
+    border: 1px solid $colorAcentoOscuro;
+    border-radius: 25px;
+ 
+    &-contenedor {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-top: 5rem;
+    }
+
+    &-area {
+        height: 24px;
+        margin-right: 2rem;
+
+        .areas {
+            font-size: 20px;
+        }
+    }
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+    

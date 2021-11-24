@@ -1,0 +1,84 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+main{
+    margin-top: 200px;
+}
+
+.banner {
+    width: 50%;
+    margin: 2rem;
+
+}
+
+.mision-vision{
+    text-align: justify;
+}
+
+.contactanos-boton {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    width: 260px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorAcentoOscuro;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;    
+    margin-bottom: 3rem;
+}
+
+.grande{
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.botonAreas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10rem;
+    height:2.7rem;
+    background-color: rgb(175, 175, 175);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
+
+
+.negrita {
+    font-weight: 600;
+}
+
+.barra {
+    height: 100%;
+}
