@@ -1,0 +1,49 @@
+.hr-valores {
+    @extend .hr;
+    width: 117px;
+    margin-top: -35px;
+}
+
+.valores-contenedor {
+    margin-bottom: 30px;
+
+    .valores {
+        font-size: 20px;
+        font-weight: 600;
+        color: $colorAcentoOscuro;
+    }
+}
+
+.quienes {
+    text-align: justify;
+}
+
+.sub-quienes {
+    font-size: 20px;
+    text-align: justify;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+
+    .sub-quienes {
+        font-size: 16px;
+    }
+    .valores-contenedor {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .quienes {
+        font-size: 16px;
+        padding: 0 30px;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) {
+    .quienes {
+        margin-top: 30px;
+    }
+
+}

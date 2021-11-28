@@ -7,36 +7,52 @@ h1, h2 {
   margin: 1rem auto; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 34px; }
 
 h2 {
   font-size: 24px; }
 
 main {
-  margin-top: 200px; }
+  margin-top: 140px; }
+  main p {
+    font-size: 16px; }
+
+.justificado {
+  text-align: justify; }
 
 .banner {
-  width: 50%;
-  margin: 2rem; }
+  height: 375px;
+  margin-bottom: 2rem; }
 
-.mision-vision {
-  text-align: justify; }
+.subtitulo {
+  font-size: 20px;
+  text-align: center;
+  margin: auto; }
+
+.hr, .hr-valores {
+  width: 30%;
+  height: 5px;
+  background-color: #4f7dbf;
+  margin-bottom: 2rem; }
 
 .contactanos-boton {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  color: white;
-  width: 260px;
+  color: #1e2c51;
+  width: 264px;
   height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1e2c51;
+  border: 2px solid #1e2c51;
   border-radius: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 3rem; }
+  .contactanos-boton:hover {
+    color: white;
+    background-color: #1e2c51; }
 
 .grande {
   width: 15rem;
@@ -66,17 +82,28 @@ main {
 .barra {
   height: 100%; }
 
-.hr-proposito {
-  width: 20%;
-  height: 5px;
-  background-color: #1e2c51;
-  margin-bottom: 2rem; }
+@media (max-width: 768px) {
+  .banner {
+    width: 120%;
+    height: auto; }
+  main {
+    margin-top: 96px; }
+    main h1 {
+      font-size: 24px; }
+    main h2 {
+      font-size: 20px; }
+    main p {
+      font-size: 16px; }
+    main .subtitulo {
+      font-size: 20px; }
+    main .contactanos-boton {
+      font-size: 14px;
+      width: 167px;
+      height: 48px; } }
 
-.hr {
-  width: 30%;
-  height: 5px;
-  background-color: #1e2c51;
-  margin-bottom: 2rem; }
+.mision-vision {
+  text-align: justify;
+  margin-bottom: 60px; }
 
 .servicios {
   width: fit-content;
@@ -86,10 +113,12 @@ main {
   border-radius: 25px; }
   .servicios-contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     height: 200px;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    font-size: 24px;
+    text-transform: uppercase; }
   .servicios-area {
     height: 24px;
     margin-right: 2rem; }
@@ -98,18 +127,39 @@ main {
 
 .check {
   width: 24px;
-  height: 24px; }
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 3px; }
+
+.foto-inicio {
+  margin-top: -24px; }
+
+@media (max-width: 768px) {
+  .mision-vision {
+    text-align: center;
+    margin-bottom: 20px; }
+  .servicios {
+    font-size: 20px; }
+  .servicios-contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 1.5rem; }
+    .servicios-contenedor p {
+      font-size: 14px; } }
 
 .subtitulo-areas {
   width: 50%;
-  font-size: 20PX; }
+  font-size: 20px; }
 
 .titulo-areas {
+  width: 100%;
   font-size: 24px;
   margin-bottom: 0; }
 
 .asesoramiento-titulo {
-  font-size: 24px;
+  width: 264px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center; }
 
@@ -119,56 +169,80 @@ main {
   background-color: #1e2c51;
   margin-bottom: 2rem; }
 
-.controladores {
-  background-color: #1e2c51;
-  border-radius: 50%;
-  padding: 1rem; }
-
-.testimonio-div {
-  width: 70%; }
+.carousel-item {
+  font-size: 24px;
+  text-align: justify; }
 
 .testimonio {
+  text-align: center;
+  width: 60%;
   font-size: 20px;
   color: #1e2c51; }
 
+.servicios-texto {
+  padding: 30px; }
+  .servicios-texto p {
+    text-align: justify; }
+
+@media (max-width: 768px) {
+  .titulo-servicios {
+    padding-top: 30px; }
+  .titulo-areas {
+    font-size: 16px; }
+  .servicios-texto {
+    display: flex;
+    justify-content: center; }
+    .servicios-texto p {
+      font-size: 16px; }
+  .carousel-item {
+    font-size: 20px; } }
+
 header {
-  height: 180px; }
+  height: 120px; }
   header .navbar {
     height: 100%;
     border-bottom: 4px solid #1e2c51; }
-    header .navbar .linkMenu {
-      text-align: center;
-      border-right: 1.5px solid #1e2c51;
-      height: 50%;
-      display: flex;
-      align-items: center; }
-
-.logo {
-  width: 100%; }
-
-.redes {
-  background-color: transparent;
-  margin-top: 15px; }
-  .redes-icono {
-    text-decoration: none;
-    background-color: #afafaf;
-    border: 1px solid #1e2c51;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .redes-icono-logo {
-      width: 20px; }
+    header .navbar .logo-cambio {
+      width: 100px;
+      height: 70px;
+      background-image: url(../media/redes/Logo2.png); }
+      header .navbar .logo-cambio:hover {
+        background-image: url(../media/redes/Logo2-hover.png); }
+    header .navbar .redes {
+      background-color: transparent;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      header .navbar .redes-icono {
+        text-decoration: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .navbar .redes-icono-logo {
+          width: 32px;
+          height: 32px; }
+        header .navbar .redes-icono .insta {
+          background-image: url(../media/redes/instagram2.png); }
+          header .navbar .redes-icono .insta:hover {
+            background-image: url(../media/redes/instagram2-hover.png); }
+        header .navbar .redes-icono .wsp {
+          background-image: url(../media/redes/whatsapp2.png); }
+          header .navbar .redes-icono .wsp:hover {
+            background-image: url(../media/redes/whatsapp2-hover.png); }
+        header .navbar .redes-icono .correo {
+          background-image: url(../media/redes/correo-abierto2.png); }
+          header .navbar .redes-icono .correo:hover {
+            background-image: url(../media/redes/correo-abierto2-hover.png); }
 
 footer {
-  height: 200px;
-  font-size: 14px;
+  height: 180px;
   border-top: 4px solid #1e2c51; }
-  footer p {
-    font-size: 14px; }
+  footer .subtitulo-footer {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e2c51; }
   footer .footer-contactanos {
     height: 100px; }
     footer .footer-contactanos .redes-icono {
@@ -176,14 +250,102 @@ footer {
   footer ul {
     list-style-type: none;
     margin-left: -27px; }
-    footer ul .asesoramiento {
-      text-decoration: underline;
+    footer ul li {
+      margin-bottom: 0.7rem; }
+  footer .derecha {
+    margin-left: -5px; }
+    footer .derecha .asesoramiento {
       font-weight: 600; }
-  footer a {
-    text-decoration: none;
-    font-size: 12px;
-    color: black; }
-  footer .seguinos {
+      footer .derecha .asesoramiento a {
+        text-decoration: none;
+        color: #1e2c51; }
+        footer .derecha .asesoramiento a:hover {
+          color: black; }
+
+@media (max-width: 768px) {
+  header {
+    height: auto; }
+    header .navbar-toggler {
+      height: 44px; }
+    header .navbar-responsive .redes {
+      width: fit-content;
+      margin-bottom: 0; }
+    header .navbar-responsive .navbar-nav {
+      justify-content: flex-start; }
+      header .navbar-responsive .navbar-nav .linkMenu {
+        border-top: 4px solid #cac9c9;
+        font-size: 16px;
+        color: black; }
+  .logo {
+    margin: 10px 0; }
+  .subtitulo-footer {
+    margin-top: 20px;
+    margin-bottom: 5px; }
+  .servicios-footer {
+    display: flex;
+    flex-direction: column; }
+    .servicios-footer .derecha {
+      margin-top: -10px;
+      padding-left: 7px; }
+  .redes-footer {
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center; }
+    .redes-footer .subtitulo-footer {
+      margin-right: 15px;
+      padding-top: 0; }
+  .seguinos {
+    margin-top: -7px; } }
+
+@media (min-width: 768px) {
+  .linkMenu {
+    text-align: center;
+    border-right: 1.5px solid #1e2c51;
+    height: 10px;
+    display: flex;
+    align-items: center; }
+    .linkMenu:hover {
+      font-weight: 600;
+      color: #1e2c51; }
+  .seguinos-footer {
+    max-width: 250px; }
+  .navbar-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; } }
+
+.hr-valores {
+  width: 117px;
+  margin-top: -35px; }
+
+.valores-contenedor {
+  margin-bottom: 30px; }
+  .valores-contenedor .valores {
+    font-size: 20px;
     font-weight: 600;
-    font-size: 14px;
-    margin-right: 1.7rem; }
+    color: #1e2c51; }
+
+.quienes {
+  text-align: justify; }
+
+.sub-quienes {
+  font-size: 20px;
+  text-align: justify;
+  margin: auto; }
+
+@media (max-width: 768px) {
+  .sub-quienes {
+    font-size: 16px; }
+  .valores-contenedor {
+    display: flex;
+    flex-direction: column; }
+  .quienes {
+    font-size: 16px;
+    padding: 0 30px;
+    text-align: justify; } }
+
+@media (min-width: 768px) {
+  .quienes {
+    margin-top: 30px; } }

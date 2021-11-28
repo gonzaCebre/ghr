@@ -1,55 +1,80 @@
 header{
-    height: 180px;
+    height: 120px;
 
     .navbar {
         height: 100%;
         border-bottom: 4px solid rgb(30, 44, 81);
-
-
-
-        .linkMenu { 
-            text-align: center;
-            border-right: 1.5px solid rgb(30, 44, 81);
-            height: 50%;
-            display: flex;
-            align-items: center;
+        
+        .logo-cambio {
+            width: 100px;
+            height: 70px;
+            background-image: url(../media/redes/Logo2.png);
+        
+            &:hover {
+                background-image: url(../media/redes/Logo2-hover.png);
+            }
         }
+    
+    
+    
+        .redes{
+            background-color: transparent;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+            &-icono {
+                text-decoration: none;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                &-logo {
+                    width: 32px;
+                    height: 32px;
+                }
+            
+                .insta {
+                    background-image: url(../media/redes/instagram2.png);
+            
+                    &:hover {
+                        background-image: url(../media/redes/instagram2-hover.png);
+                    }
+                }
+            
+                    .wsp {
+                        background-image: url(../media/redes/whatsapp2.png);
+            
+                        &:hover {
+                            background-image: url(../media/redes/whatsapp2-hover.png);
+                        }
+                    }
+            
+                    .correo {
+                        background-image: url(../media/redes/correo-abierto2.png);
+            
+                        &:hover {
+                            background-image: url(../media/redes/correo-abierto2-hover.png);
+                        }
+                    }
+                }
+            }
     }
+
+    
 }
 
-.logo {
-    width: 100%;
-}
-
-.redes{
-    background-color: transparent;
-    margin-top: 15px;
-
-    &-icono {
-        text-decoration: none;
-        background-color: rgb(175, 175, 175);
-        border: 1px solid rgb(30, 44, 81);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &-logo {
-            width: 20px;
-        }
-    }
-}
 
 footer {
-    height: 200px;
-    font-size: 14px;    
+    height: 180px;   
     border-top: 4px solid rgb(30, 44, 81);
-    
-    p{
-        font-size: 14px;
+
+    .subtitulo-footer {
+        font-size: 16px;
+        font-weight: 600;
+        color: $colorAcentoOscuro;
     }
 
     .footer-contactanos {
@@ -62,23 +87,127 @@ footer {
     ul{
         list-style-type: none;
         margin-left: -27px;
-
-        .asesoramiento {
-            text-decoration: underline;
-            font-weight: 600;
+        
+        li {
+            margin-bottom: 0.7rem;
         }
     }
 
-    & a {
-        text-decoration: none;
-        font-size: 12px;
-        color: black;
+    .derecha {
+        margin-left: -5px;
+
+        .asesoramiento {
+            font-weight: 600;
+
+            a{
+                text-decoration: none;
+                color: $colorAcentoOscuro;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
     }
 
-    .seguinos {
-        font-weight: 600;
-        font-size: 14px;
-        margin-right: 1.7rem;
-    }
 }
 
+@media (max-width: 768px) {
+    header{
+        height: auto;
+
+
+
+        .navbar-toggler {
+            height: 44px;
+        }
+
+        .navbar-responsive {
+
+            .redes {
+                width: fit-content;
+                margin-bottom: 0;
+            }
+
+            .navbar-nav {
+                justify-content: flex-start;
+
+                .linkMenu {
+                    border-top: 4px solid rgb(202, 201, 201);
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+
+        }
+
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .subtitulo-footer{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .servicios-footer {
+        display: flex;
+        flex-direction: column;
+
+        .derecha {
+            margin-top: -10px;
+            padding-left: 7px;
+        }
+    }
+
+    .redes-footer {
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        
+        .subtitulo-footer {
+            margin-right: 15px;
+            padding-top: 0;
+        }
+    }
+
+
+        .seguinos {
+            margin-top: -7px;
+        }
+
+
+}
+
+@media (min-width: 768px) {
+            .linkMenu { 
+                text-align: center;
+                border-right: 1.5px solid rgb(30, 44, 81);
+                height: 10px;
+                display: flex;
+                align-items: center;
+    
+                &:hover {
+                    font-weight: 600;
+                    color: $colorAcentoOscuro;
+                }
+            }
+
+
+            .seguinos-footer {
+                max-width: 250px;
+            }        
+    
+
+
+    .navbar-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+}

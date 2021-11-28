@@ -1,15 +1,17 @@
 .subtitulo-areas{
     width: 50%;
-    font-size: 20PX;
+    font-size: 20px;
 }
 .titulo-areas {
+    width: 100%;
     font-size: 24px;
     margin-bottom: 0;
 }
 
 
 .asesoramiento-titulo{
-    font-size: 24px;
+    width: 264px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
 }
@@ -21,18 +23,46 @@
     margin-bottom: 2rem;
 }
 
-.controladores{
-    background-color: $colorAcentoOscuro;
-    border-radius: 50%;
-    padding: 1rem;
-}
-
-.testimonio-div {
-    width: 70%;
+.carousel-item {
+    font-size: 24px;
+    text-align: justify;
 }
 
 .testimonio {
+    text-align: center;
+    width: 60%;
     font-size: 20px;
     color: $colorAcentoOscuro;
 }
 
+.servicios-texto {
+    padding: 30px;
+
+    p {
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 768px){
+    .titulo-servicios {
+        padding-top: 30px;
+    }
+
+    .titulo-areas {
+        font-size: 16px;
+    }
+
+    .servicios-texto {
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-size: 16px; 
+        }
+    }
+
+    .carousel-item {
+        font-size: 20px;
+    }
+}
