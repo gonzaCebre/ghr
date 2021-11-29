@@ -18,83 +18,88 @@
 
     <header class="fixed-top">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid justify-content-around barra">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="container justify-content-around">
 
-                <a class="navbar-brand col-lg-2" href="../index.html">
-                    <img src="../media/redes/Logo PNG.png" alt="GHR" class="logo">
-                </a>
+                <div class="container d-flex justify-content-between  align-items-center">
+                    <a class="navbar-brand col-lg-1" href="../index.html">
+                        <div class="logo-cambio"></div>
+                    </a>
 
-                <div class="col-lg-5 barra">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <div class="collapse navbar-collapse d-flex flex-column align-items-end justify-content-between justify-content-between barra"
-                        id="navbarTogglerDemo02">
-                        <div class="col-lg-5 ">
-
-                            <div class="redes d-flex justify-content-between">
-                                <div class="redes-icono">
-                                    <a href="https://www.instagram.com/abogadoenseguros.ghr/" target="_blank">
-                                        <img src="../media/redes/instagram(1).png" alt="logo instagram"
-                                            class="redes-icono-logo">
-                                    </a>
-                                </div>
-                                <div class="redes-icono">
-                                    <a href="https://api.whatsapp.com/send?phone=+54" target="_blank">
-                                        <img src="../media/redes/whatsapp.png" alt="logo whatsapp"
-                                            class="redes-icono-logo">
-                                    </a>
-                                </div>
-                                <div class="redes-icono">
-                                    <a href="contacto.html" target="_blank">
-                                        <img src="../media/redes/correo-abierto.png" alt="logo correo"
-                                            class="redes-icono-logo">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="navbar-nav align-items-end">
-                            <a class="nav-item nav-link px-1  linkMenu" href="../index.html">INICIO</a>
-                            <a class="nav-item nav-link px-1 linkMenu" href="quienesSomos.html">QUIENES
-                                SOMOS</a>
-                            <a class="nav-item nav-link px-1  linkMenu" href="preguntasFrecuentes.html">PREGUNTAS
-                                FRECUENTES</a>
-                            <a class="nav-item nav-link px-1  linkMenu" href="contacto.html">CONTACTANOS</a>
-                        </div>
-
-                    </div>
-
                 </div>
 
+                <div class="collapse navbar-collapse navbar-responsive col-md-8" id="navbarTogglerDemo02">
+
+                    <div class="redes d-flex justify-content-between">
+                        <div class="redes-icono">
+                            <a href="https://www.instagram.com/ghrabogados/" target="_blank">
+                                <div class="redes-icono-logo insta"></div>
+                            </a>
+                        </div>
+                        <div class="redes-icono">
+                            <a href="https://api.whatsapp.com/send?phone=+5491161612784" target="_blank">
+                                <div class="redes-icono-logo wsp"></div>
+                            </a>
+                        </div>
+                        <div class="redes-icono">
+                            <a href="mailto:info@ghrabogados.com?Subject=Mensaje%20desde%20asunto%20del%20mail"
+                                target="_blank">
+                                <div class="redes-icono-logo correo"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link px-1  linkMenu" href="../index.html">
+                            INICIO
+                        </a>
+                        <a class="nav-item nav-link px-1 linkMenu" href="quienesSomos.html">
+                            QUIENES SOMOS
+                        </a>
+                        <a class="nav-item nav-link px-1  linkMenu" href="preguntasFrecuentes.html">
+                            PREGUNTAS FRECUENTES
+                        </a>
+                        <a class="nav-item nav-link px-1  linkMenu" href="contacto.html">
+                            CONTACTANOS
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <h1>SERVICIOS</h1>
+    <main class="container flex-column align-items-center justify-content-center">
+        <h1 class="titulo-servicios">SERVICIOS</h1>
 
-        <div class="d-flex justify-content-center">
-            <p class="text-center subtitulo-areas">Te ofrecemos los siguientes servicios, siempre con el mejor
+        <div class="servicios-texto  row justify-content-center">
+
+            <p class="col-md-8">
+                Te ofrecemos los siguientes servicios,
+                siempre
+                con el mejor
                 asesoramiento
                 y la mayor
                 celeridad para que te
                 hagas
                 del efectivo cobro de tu indemnización.
             </p>
+
         </div>
 
 
-        <section class="d-flex justify-content-around flex-wrap">
 
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2">
+        <section class="d-flex justify-content-around flex-wrap my-5">
+
+            <article class="col-md-3 m-2">
                 <p class="titulo-areas">ACCIDENTES DE TRÁNSITO</p>
                 <div class="hr-areas"></div>
-                <p>Efectuamos tu reclamo de tercero contra la compañía de seguros del vehículo asegurado que provocó el
+                <p class="justificado">Efectuamos tu reclamo de tercero contra la compañía de seguros del vehículo
+                    asegurado que provocó el
                     hecho mediante una mediación y/o juicio.
                     Tenés derecho a ser indemnizado por los daños materiales y/o las lesiones sufridas.
                     Abarca tanto automotor como motovehículo, peatón, ciclista, pasajero transportado (taxi, remisse,
@@ -102,20 +107,11 @@
                 </p>
             </article>
 
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2">
-                <p class="titulo-areas">RECLAMOS CONTRACTUALES</p>
-                <div class="hr-areas"></div>
-                <p>Tuviste un siniestro y tu propia compañía de seguros no te abona el mismo o te ofrece un importe
-                    menor?
-                    Te brindamos asesoramiento ante el incumplimiento contractual por parte de tu propia aseguradora -de
-                    vida, de hogar, integral de comercio o cualquier otro- para que sea obligada a brindar las
-                    prestaciones debidas y cubrir los riesgos asegurados.</p>
-            </article>
-
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2">
+            <article class="col-md-3 m-2">
                 <p class="titulo-areas">ACCIDENTES DE TRABAJO</p>
                 <div class="hr-areas"></div>
-                <p>Si sufriste una enfermedad laboral, un accidente de trabajo prestando servicios o en un viaje “in
+                <p class="justificado">Si sufriste una enfermedad laboral, un accidente de trabajo prestando servicios o
+                    en un viaje “in
                     itinere” -yendo o volviendo al lugar de trabajo- te corresponde una indemnización.
                     Nuestro equipo de médico legistas te ayudarán a defender tus derechos ante las Comisiones Médicas
                     y/o en caso de iniciar un juicio contra tu A.R.T.
@@ -124,22 +120,37 @@
                 </p>
             </article>
 
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2">
-                <p class="titulo-areas">SUCESIONES</p>
+            <article class="col-md-3  m-2">
+                <p class="titulo-areas">RECLAMOS CONTRACTUALES</p>
                 <div class="hr-areas"></div>
-                <p>Nuestro estudio brinda un servicio rápido y flexible para dar inicio al trámite sucesorio con
-                    facilidades de pago.</p>
+                <p class="justificado">Tuviste un siniestro y tu propia compañía de seguros no te abona el mismo o te
+                    ofrece un importe
+                    menor?
+                    Te brindamos asesoramiento ante el incumplimiento contractual por parte de tu propia aseguradora -de
+                    vida, de hogar, integral de comercio o cualquier otro- para que sea obligada a brindar las
+                    prestaciones debidas y cubrir los riesgos asegurados.</p>
             </article>
 
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2">
+            <article class="col-md-3 m-2">
                 <p class="titulo-areas">DEFENSA DEL CONSUMIDOR</p>
                 <div class="hr-areas"></div>
-                <p>Cada vez más las empresas prestadoras de servicio y venta de bienes abusan de su posición dominante
+                <p class="justificado">Cada vez más las empresas prestadoras de servicio y venta de bienes abusan de su
+                    posición dominante
                     en el mercado. ¡No te preocupes! La le defiende tus derechos como consumidor. Consultanos para
                     recibir el mejor asesoramiento personalizado.</p>
             </article>
 
-            <article class="col-lg-3 col-md-5 col-sm-8 m-2 d-flex flex-column align-items-center">
+            <article class="col-md-3 m-2">
+                <p class="titulo-areas">SUCESIONES</p>
+                <div class="hr-areas"></div>
+                <p class="justificado">Nuestro estudio brinda un servicio rápido y flexible para dar inicio al trámite
+                    sucesorio con
+                    facilidades de pago.</p>
+            </article>
+
+
+
+            <article class="col-md-3 m-2 d-flex flex-column align-items-center">
                 <p class="asesoramiento-titulo">¡Pedí tu asesoramiento personalizado de forma gratuita!</p>
                 <a href="./contacto.html" class="contactanos-boton grande">CONTACTANOS</a>
             </article>
@@ -147,96 +158,111 @@
 
         </section>
 
+        <div id="carouselExampleControls"
+            class="carousel slide container  col-md-8 d-flex justify-content-center align-items-center  mb-5"
+            data-ride="carousel">
 
-        <div id="carouselExampleControls" class="carousel slide container col-lg-6" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active testimonio-div">
-                    <p class="d-block text-center testimonio">“Fui víctima de un accidente en un colectivo. No sabía que
-                        podía reclamar las lesiones sufridas hasta que un amigo me recomendó al Dr. Rojas.
-                        Luego de pocos meses cobre la indemnización; más de lo que creí que iba a ser”</p>
+            <a href="#carouselExampleControls" role="button" data-slide="prev">
+                <img src="../media/icons/prev.png" alt="">
+            </a>
+
+            <div class="carousel-inner justify-content-center mx-5">
+
+                <div class="carousel-item active text-center">“Un colectivo destruyó mi auto, por suerte no sufrí
+                    lesiones. Decidí realizar el reclamo a través de una mediación con el Dr. Rojas y a los pocos meses
+                    cobré la indemnización. No sólo reparé el auto sino que también quedó un resto en concepto de
+                    privación de uso y desvalorización de reventa de mercado del coche“
                 </div>
-                <div class="carousel-item">
-                    <p class="d-block text-center testimonio">“Sufrí un accidente yendo a mi trabajo. Me acompañaron
-                        desde el primer minuto. Incluso me acompañaron con un médico legista. La A.R.T. consideraba que
-                        tenía un porcentaje menor de incapacidad, y gracias a su gestión me otorgaron el porcentaje que
-                        realmente correspondía”</p>
+                <div class="carousel-item text-center">“Fui víctima de un accidente en un colectivo.
+                    No sabía que
+                    podía reclamar las lesiones sufridas hasta que un amigo me recomendó al Dr. Rojas.
+                    Luego de pocos meses cobre la indemnización; más de lo que creí que iba a ser”
                 </div>
-                <div class="carousel-item">
-                    <p class="d-block text-center  testimonio">“El Dr. Rojas fue muy amable conmigo y me explicó todo en
-                        detalle. Trámite la sucesión de mi padre más rápido de lo que pensé que iba a durar, y además me
-                        otorgaron facilidades de pago”</p>
+                <div class="carousel-item text-center">“Sufrí un accidente yendo a mi trabajo. Me acompañaron
+                    desde el primer minuto. Incluso me acompañaron con un médico legista. La A.R.T. consideraba que
+                    tenía un porcentaje menor de incapacidad, y gracias a su gestión me otorgaron el porcentaje que
+                    realmente correspondía”
+                </div>
+                <div class="carousel-item text-center">“El Dr. Rojas fue muy amable conmigo y me explicó todo en
+                    detalle. Trámite la sucesión de mi padre más rápido de lo que pensé que iba a durar, y además me
+                    otorgaron facilidades de pago”
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon controladores" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon controladores" aria-hidden="true"></span>
+
+            <a href="#carouselExampleControls" role="button" data-slide="next">
+                <img src="../media/icons/next.png" alt="">
             </a>
         </div>
+
+
     </main>
 
-    <footer class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <footer class="container-fluid d-flex justify-content-center">
 
-            <a class="navbar-brand col-lg-1" href="../index.html">
-                <img src="../media/redes/Logo PNG.png" alt="GHR" class="logo">
-            </a>
+        <div class="row justify-content-between align-items-center col-10">
 
-            <div class="col-lg-2 ">
-                <p>Contactanos</p>
+            <img src="../media/redes/Logo PNG.png" alt="GHR" class="col-5 col-md-1 logo">
+
+            <div class="col-md-2 ">
+                <p class="subtitulo-footer">Contactanos</p>
                 <div class="d-flex flex-column justify-content-between footer-contactanos">
 
-                    <div class="d-flex align-items-end">
-                        <a href="https://api.whatsapp.com/send?phone=+54" target="_blank" class="redes-icono">
-                            <img src="../media/redes/whatsapp.png" alt="logo whatsapp" class="redes-icono-logo">
+                    <div class="d-flex align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=+5491161612784" target="_blank"
+                            class="redes-icono">
+                            <img src="../media/redes/whatsapp2.png" alt="logo whatsapp" class="redes-icono-logo">
                         </a>
-                        <p>1198765432</p>
+                        <p class="pt-3">1198765432</p>
                     </div>
 
-                    <div class="d-flex align-items-end">
-                        <a href="contacto.html" target="_blank" class="redes-icono">
-                            <img src="../media/redes/correo-abierto.png" alt="logo correo" class="redes-icono-logo">
+                    <div class="d-flex align-items-center">
+                        <a href="mailto:info@ghrabogados.com?Subject=Mensaje%20desde%20asunto%20del%20mail"
+                            target="_blank" class="redes-icono">
+                            <img src="../media/redes/correo-abierto2.png" alt="logo correo" class="redes-icono-logo">
                         </a>
-                        <p>ghr@gmail.com</p>
+                        <p class="pt-3">ghr@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <p>Áreas de práctica</p>
-                <div class="d-flex justify-content-between">
+            <div class="col-md-4">
+                <p class="subtitulo-footer">Servicios</p>
+                <div class="d-flex justify-content-between servicios-footer">
                     <ul>
-                        <li><a href="areasDePractica.html">Accidentes de transito</a></li>
-                        <li><a href="areasDePractica.html">Reclamos contractuales</a></li>
-                        <li><a href="areasDePractica.html">Accidentes de trabajos</a></li>
+                        <li>Accidentes de transito</li>
+                        <li>Reclamos contractuales</li>
+                        <li>Accidentes de trabajos</li>
                     </ul>
-                    <ul>
-                        <li><a href="areasDePractica.html">Sucesiones</a></li>
-                        <li class=><a href="areasDePractica.html">Defensa al consumidor</a></li>
-                        <li><a href="contacto.html" class="asesoramiento">Solicitar asesoramiento</a></li>
+                    <ul class="derecha">
+                        <li>Sucesiones</a></li>
+                        <li>Defensa al consumidor</li>
+                        <li class="asesoramiento"><a href="contacto.html">Solicitar asesoramiento</a></li>
                     </ul>
                 </div>
-
             </div>
 
-            <div class="d-flex col-lg-2 align-items-end">
-                <p class="seguinos">Seguinos en las redes</p>
+            <div class="d-flex col-md-3 align-items-center justify-content-around redes-footer seguinos-footer">
+                <p class="subtitulo-footer pt-3 seguinos">Seguinos en las redes</p>
                 <a href="https://www.instagram.com/abogadoenseguros.ghr/" target="_blank" class="redes-icono">
-                    <img src="../media/redes/instagram(1).png" alt="logo instagram" class="redes-icono-logo">
+                    <img src="../media/redes/instagram2.png" alt="logo instagram" class="redes-icono-logo">
                 </a>
             </div>
 
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!--Bootstrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
 </body>

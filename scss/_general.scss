@@ -11,7 +11,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 34px;
 }
 
 h2 {
@@ -19,34 +19,57 @@ h2 {
 }
 
 main{
-    margin-top: 200px;
+    margin-top: 140px;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.justificado {
+    text-align: justify;
 }
 
 .banner {
-    width: 50%;
-    margin: 2rem;
-
+    height: 375px;
+    margin-bottom: 2rem;
 }
 
-.mision-vision{
-    text-align: justify;
+.subtitulo {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
 }
+
+.hr{
+    width: 30%;
+    height: 5px;
+    background-color: $colorAcento;
+    margin-bottom: 2rem;
+}
+
+
 
 .contactanos-boton {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    color: white;
-    width: 260px;
+    color: $colorAcentoOscuro;
+    width: 264px;
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $colorAcentoOscuro;
+    border: 2px solid $colorAcentoOscuro;
     border-radius: 2rem;
     text-transform: uppercase;
     text-decoration: none;    
     margin-bottom: 3rem;
+
+    &:hover {
+        color: white;
+        background-color: $colorAcentoOscuro;
+    }
 }
 
 .grande{
@@ -81,4 +104,41 @@ main{
 
 .barra {
     height: 100%;
+}
+
+@media (max-width: 768px){
+    .banner {
+        width: 120%;
+        height: auto;
+    }
+
+    main{
+        margin-top: 96px;
+
+        h1{
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .subtitulo {
+            font-size: 20px;
+        }
+
+        
+
+        .contactanos-boton {
+            font-size: 14px;
+            width: 167px;
+            height: 48px;
+        }
+    }
+
+
 }
