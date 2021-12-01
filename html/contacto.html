@@ -83,24 +83,24 @@
 
         <h1 class="text-center">CONTACTANOS</h1>
 
-        <div class="d-flex justify-content-around">
-            <div class="d-flex flex-column align-items-center">
-                <a href="https://api.whatsapp.com/send?phone=+54" target="_blank">
+        <div class="d-flex flex-row justify-content-around grid-contacto mx-auto">
+            <div class="d-flex flex-column align-items-center redes-contacto">
+                <a href="https://api.whatsapp.com/send?phone=+54" target="_blank" >
                     <img src="../media/redes/whatsapp.png" alt="logo whatsapp" class="redes-icono-contacto">
                 </a>
                 <p class="texto-form">Envianos un mensaje al 1198765432</p>
             </div>
 
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center redes-contacto">
                 <a href="./contacto.html" target="_blank">
                     <img src="../media/redes/correo-abierto.png" alt="logo correo" class="redes-icono-contacto">
                 </a>
                 <p class="texto-form">Escribinos a ghr@gmail.com</p>
             </div>
         </div>
+    </main>
 
-
-        <section class="d-flex align-items-center container justify-content-between margin-contacto">
+        <section class="d-flex align-items-center justify-content-around margin-contacto">
             <div class="parrafo-alinear text-justify">
                 <p class="texto-form negrita">
                     Comunicate con nosotros completando el siguiente formulario con tu consulta. A la brevedad nos
@@ -108,33 +108,33 @@
                 </p>
 
                 <form action="https://formsubmit.co/vicsdago@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://gonzacebre.github.io/ghr/html/recibiConsulta.html">
+                    <input type="hidden" name="_next" value="https://gonzacebre.github.io/ghr/html/recibiConsulta.html" class="form-control">
                     <input type="hidden" name="_subject" value="Consulta desde la web GHR">
                     <ul>
                         <li>
-                            <input type="text" id="name" name="user_name" placeholder="Nombre y apellido*" value
+                            <input type="text" id="name" name="user_name" placeholder="Nombre y apellido*" class="form-control"value
                                 required>
                         </li>
                         <li>
-                            <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico*" value
+                            <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico*"class="form-control" value
                                 required>
                         </li>
                         <li>
-                            <input type="text" id="name" name="user_name" placeholder="Teléfono*" value required>
+                            <input type="text" id="name" name="user_name" placeholder="Teléfono*"class="form-control" value required>
                         </li>
                         <li>
-                            <input type="text" id="name" name="user_name" placeholder="Asunto*" value required>
+                            <input type="text" id="name" name="user_name" placeholder="Asunto*"class="form-control" value required>
                         </li>
                         <li>
-                            <textarea id="msg" name="user_message" placeholder="Tu consulta*" value required></textarea>
+                            <textarea id="msg" name="user_message" placeholder="Tu consulta*"class="form-control" value required></textarea>
                         </li>
                     </ul>
-                    <button type="submit" class="contactanos-boton-form ms-auto">Enviar Consulta</button>
+                    <button type="submit" class="contactanos-boton-form ms-auto" class="form-control">Enviar Consulta</button>
                 </form>
             </div>
-
-            <img src="../media/img/Consulta.jpg" alt="" class="banner">
-
+<div class="d-flex align-items-center justify-content-center ">
+            <img src="../media/img/Consulta.jpg" alt="" class="banner-contacto">
+</div>
         </section>
 
 

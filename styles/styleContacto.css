@@ -40,16 +40,16 @@ form> ul {
   
   .parrafo-alinear{
   width: 337px;
-    /* margin-left: 135px; */
+
     text-align: justify;
   }
   
-  .banner {
+  .banner-contacto {
     height: 400px;
     margin-bottom: 2rem;
-  margin-right: 135px; }
+ }
 
-.margin-contacto {
+.margin-contacto {  
     
     margin-top: 1rem;
   }
@@ -85,3 +85,36 @@ margin-bottom: 20px; }
    margin-bottom: 0px ;
   }   
 
+  @media (max-width: 768px) {
+    .banner-contacto {
+        display: none ;
+    }
+    .redes-contacto{
+        display: flex; 
+        align-items: flex-start !important;
+        margin-left: 2rem;
+        }
+
+        .margin-contacto {
+        display: flex; 
+        text-align: center !important;
+        justify-content: center !important;
+        margin-top: 1rem;
+        }
+.grid-contacto{
+    display: flex;
+flex-direction: column !important;
+justify-content: start !important;
+}
+.redes-icono-contacto {
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    margin-bottom: 19px;
+margin-top: 21px; }
+
+}
