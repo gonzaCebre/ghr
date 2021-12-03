@@ -4,8 +4,7 @@
 
 h1, h2 {
   text-align: center;
-  margin: 1rem auto; 
-}
+  margin: 1rem auto; }
 
 h1 {
   font-size: 34px;
@@ -107,6 +106,13 @@ main {
   .banner {
     width: 100vw; } }
 
+.faqs {
+  color: black;
+  font-weight: 600; }
+
+.accordion-item {
+  border: none; }
+
 .mision-vision {
   text-align: justify;
   margin-bottom: 60px; }
@@ -171,7 +177,7 @@ main {
 
 .titulo-areas {
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 0; }
 
 .asesoramiento-titulo {
@@ -290,10 +296,6 @@ footer {
       margin-bottom: 0; }
     header .navbar-responsive .navbar-nav {
       justify-content: flex-start; }
-      header .navbar-responsive .navbar-nav .linkMenu {
-        border-top: 4px solid #cac9c9;
-        font-size: 16px;
-        color: black; }
   .logo {
     margin: 10px 0; }
   .subtitulo-footer {
@@ -340,11 +342,8 @@ footer {
       font-weight: 600;
       color: #1e2c51; }
   .activo {
-
     font-weight: 600;
     color: black; }
-  .izq-activo {
-    border-left: 1.5px solid #1e2c51; }
   .seguinos-footer {
     max-width: 250px; }
   .navbar-responsive {
