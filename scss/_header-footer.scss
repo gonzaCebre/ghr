@@ -130,11 +130,11 @@ footer {
             .navbar-nav {
                 justify-content: flex-start;
 
-                .linkMenu {
-                    border-top: 4px solid rgb(202, 201, 201);
-                    font-size: 16px;
-                    color: black;
-                }
+            //     .linkMenu {
+            //     //     // border-top: 4px solid rgb(202, 201, 201);
+            //     //     font-size: 16px;
+            //     //     color: black;
+            //     // }
             }
 
         }
@@ -225,18 +225,11 @@ footer {
     }
 
     .activo {
-        background-color: $colorSecundario;
-        padding: 19px 0;
-        border: none;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+
         font-weight: 600;
-        color: $colorAcentoOscuro;
+        color: black;
     }
 
-    .izq-activo {
-        border-left: 1.5px solid rgb(30, 44, 81);
-    }
 
 
     .seguinos-footer {

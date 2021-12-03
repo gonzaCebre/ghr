@@ -340,13 +340,9 @@ footer {
       font-weight: 600;
       color: #1e2c51; }
   .activo {
-    background-color: #cac9c9;
-    padding: 19px 0;
-    border: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
     font-weight: 600;
-    color: #1e2c51; }
+    color: black; }
   .izq-activo {
     border-left: 1.5px solid #1e2c51; }
   .seguinos-footer {
