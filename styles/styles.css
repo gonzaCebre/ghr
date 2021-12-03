@@ -102,10 +102,11 @@ main {
       width: 167px;
       height: 48px; } }
 
-@media (min-width: 1200px) {
-  .banner {
-    width: 100vw; } }
-
+/* @media (min-width: 1200px){
+    .banner {
+        
+    }
+} */
 .faqs {
   color: black;
   font-weight: 600; }
