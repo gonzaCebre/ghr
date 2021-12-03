@@ -7,7 +7,8 @@ h1, h2 {
   margin: 1rem auto; }
 
 h1 {
-  font-size: 34px; }
+  font-size: 34px;
+  font-weight: 700; }
 
 h2 {
   font-size: 24px; }
@@ -101,6 +102,10 @@ main {
       width: 167px;
       height: 48px; } }
 
+@media (min-width: 1200px) {
+  .banner {
+    width: 100vw; } }
+
 .mision-vision {
   text-align: justify;
   margin-bottom: 60px; }
@@ -111,18 +116,23 @@ main {
   padding: 13px 64px;
   border: 1px solid #1e2c51;
   border-radius: 25px; }
-  .servicios-contenedor {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: 200px;
-    margin-top: 5rem;
-    font-size: 24px;
-    text-transform: uppercase; }
-  .servicios-area {
+
+.servicios-contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 200px;
+  margin-top: 5rem;
+  font-size: 24px;
+  text-transform: uppercase; }
+  .servicios-contenedor .servicios-area {
     height: 24px;
-    margin-right: 2rem; }
-    .servicios-area .areas {
+    width: 320px;
+    display: flex;
+    justify-content: flex-start;
+    /* 
+        margin-right: 2rem; */ }
+    .servicios-contenedor .servicios-area .areas {
       font-size: 20px; }
 
 .check {
@@ -146,7 +156,13 @@ main {
     margin-top: 0;
     margin-bottom: 1.5rem; }
     .servicios-contenedor p {
-      font-size: 14px; } }
+      font-size: 14px; }
+    .servicios-contenedor .sucesiones {
+      justify-content: flex-start; } }
+
+@media (min-width: 768px) {
+  .sucesiones {
+    margin-left: 150px; } }
 
 .subtitulo-areas {
   width: 50%;
@@ -166,7 +182,7 @@ main {
 .hr-areas {
   width: 20%;
   height: 5px;
-  background-color: rgb(79, 125, 191);
+  background-color: #4f7dbf;
   margin-bottom: 2rem; }
 
 .carousel-item {
@@ -201,13 +217,10 @@ header {
   height: 120px; }
   header .navbar {
     height: 100%;
-    border-bottom: 4px solid #1e2c51; }
-    header .navbar .logo-cambio {
-      width: 100px;
-      height: 70px;
-      background-image: url(../media/redes/Logo2.png); }
-      header .navbar .logo-cambio:hover {
-        background-image: url(../media/redes/Logo2-hover.png); }
+    border-bottom: 4px solid #1e2c51;
+    padding: 0 20px; }
+    header .navbar .logo-header {
+      width: 100px; }
     header .navbar .redes {
       background-color: transparent;
       margin-top: 10px;
@@ -235,6 +248,10 @@ header {
           background-image: url(../media/redes/correo-abierto2.png); }
           header .navbar .redes-icono .correo:hover {
             background-image: url(../media/redes/correo-abierto2-hover.png); }
+
+.logo {
+  margin: 10px 0;
+  width: 120px; }
 
 footer {
   height: 180px;
@@ -298,7 +315,20 @@ footer {
   .seguinos {
     margin-top: -7px; } }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-nav {
+    max-width: 380px;
+    margin-top: -10px; }
+    .navbar-nav a {
+      line-height: 14px; }
+    .navbar-nav .activo {
+      padding: 24px 0; }
+  footer p {
+    font-size: 14px; } }
+
 @media (min-width: 768px) {
+  .navbar-nav {
+    align-items: center; }
   .linkMenu {
     text-align: center;
     border-right: 1.5px solid #1e2c51;
@@ -308,6 +338,16 @@ footer {
     .linkMenu:hover {
       font-weight: 600;
       color: #1e2c51; }
+  .activo {
+    background-color: #cac9c9;
+    padding: 19px 0;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 600;
+    color: #1e2c51; }
+  .izq-activo {
+    border-left: 1.5px solid #1e2c51; }
   .seguinos-footer {
     max-width: 250px; }
   .navbar-responsive {
@@ -315,6 +355,13 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between; } }
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  .footer-servicios {
+    margin-left: 20px; }
+    .footer-servicios ul li {
+      line-height: 14px;
+      margin-bottom: 5px; } }
 
 .hr-valores {
   width: 117px;

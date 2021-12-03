@@ -4,18 +4,11 @@ header{
     .navbar {
         height: 100%;
         border-bottom: 4px solid rgb(30, 44, 81);
-        
-        .logo-cambio {
+        padding: 0 20px;
+
+        .logo-header {
             width: 100px;
-            height: 70px;
-            background-image: url(../media/redes/Logo2.png);
-        
-            &:hover {
-                background-image: url(../media/redes/Logo2-hover.png);
-            }
-        }
-    
-    
+        }    
     
         .redes{
             background-color: transparent;
@@ -66,6 +59,10 @@ header{
     
 }
 
+.logo {
+    margin: 10px 0;
+    width:120px;
+}
 
 footer {
     height: 180px;   
@@ -111,6 +108,7 @@ footer {
     }
 
 }
+
 
 @media (max-width: 768px) {
     header{
@@ -182,24 +180,68 @@ footer {
 
 }
 
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-nav {
+        max-width: 380px;
+        margin-top: -10px;
+
+        a {
+            line-height: 14px;
+        }
+
+
+        .activo {
+            padding: 24px 0;
+        }
+
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+
+}
+
 @media (min-width: 768px) {
-            .linkMenu { 
-                text-align: center;
-                border-right: 1.5px solid rgb(30, 44, 81);
-                height: 10px;
-                display: flex;
-                align-items: center;
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+
+    .linkMenu { 
+        text-align: center;
+        border-right: 1.5px solid rgb(30, 44, 81);
+        height: 10px;
+        display: flex;
+        align-items: center;
     
-                &:hover {
-                    font-weight: 600;
-                    color: $colorAcentoOscuro;
-                }
-            }
+        &:hover {
+            font-weight: 600;
+            color: $colorAcentoOscuro;
+        }
+    }
+
+    .activo {
+        background-color: $colorSecundario;
+        padding: 19px 0;
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-weight: 600;
+        color: $colorAcentoOscuro;
+    }
+
+    .izq-activo {
+        border-left: 1.5px solid rgb(30, 44, 81);
+    }
 
 
-            .seguinos-footer {
-                max-width: 250px;
-            }        
+    .seguinos-footer {
+        max-width: 250px;
+    }        
     
 
 
@@ -210,4 +252,16 @@ footer {
         justify-content: space-between;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1260px) {
+
+    .footer-servicios {
+        margin-left: 20px;
+
+        ul li {
+            line-height: 14px;
+            margin-bottom: 5px;
+        }
+    }
 }

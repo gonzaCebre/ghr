@@ -9,20 +9,25 @@
     padding: 13px 64px;
     border: 1px solid $colorAcentoOscuro;
     border-radius: 25px;
+}
  
-    &-contenedor {
-        display: flex;
+.servicios-contenedor {
+        display: flex; 
         justify-content: space-around;
         flex-wrap: wrap;
         height: 200px;
         margin-top: 5rem;
         font-size: 24px;
         text-transform: uppercase;
-    }
+    
 
-    &-area {
+
+    .servicios-area {
         height: 24px;
-        margin-right: 2rem;
+        width: 320px;
+        display: flex;
+        justify-content: flex-start;/* 
+        margin-right: 2rem; */
 
         .areas {
             font-size: 20px;
@@ -60,5 +65,15 @@
         p {
             font-size: 14px;
         }
+
+        .sucesiones {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .sucesiones {
+        margin-left: 150px;
     }
 }

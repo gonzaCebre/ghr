@@ -27,8 +27,8 @@
             <div class="container justify-content-around">
 
                 <div class="container d-flex justify-content-between  align-items-center">
-                    <a class="navbar-brand col-lg-1" href="../index.html">
-                        <div class="logo-cambio"></div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../media/redes/Logo PNG.png" alt="" class="logo-header">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -72,7 +72,9 @@
                         <a class="nav-item nav-link px-1  linkMenu" href="preguntasFrecuentes.html">
                             PREGUNTAS FRECUENTES
                         </a>
-
+                        <a class="nav-item nav-link px-1  linkMenu active activo" href="contacto.html">
+                            CONTACTANOS
+                        </a>
                     </div>
                 </div>
             </div>
@@ -85,7 +87,7 @@
 
         <div class="d-flex flex-row justify-content-around grid-contacto mx-auto">
             <div class="d-flex flex-column align-items-center redes-contacto">
-                <a href="https://api.whatsapp.com/send?phone=+54" target="_blank" >
+                <a href="https://api.whatsapp.com/send?phone=+54" target="_blank">
                     <img src="../media/redes/whatsapp.png" alt="logo whatsapp" class="redes-icono-contacto">
                 </a>
                 <p class="texto-form">Envianos un mensaje al 1198765432</p>
@@ -100,42 +102,47 @@
         </div>
     </main>
 
-        <section class="d-flex align-items-center justify-content-around margin-contacto">
-            <div class="parrafo-alinear text-justify">
-                <p class="texto-form negrita">
-                    Comunicate con nosotros completando el siguiente formulario con tu consulta. A la brevedad nos
-                    pondremos en contacto para brindarte asesoramiento personalizado.
-                </p>
+    <section class="d-flex align-items-center justify-content-around margin-contacto">
+        <div class="parrafo-alinear text-justify">
+            <p class="texto-form negrita">
+                Comunicate con nosotros completando el siguiente formulario con tu consulta. A la brevedad nos
+                pondremos en contacto para brindarte asesoramiento personalizado.
+            </p>
 
-                <form action="https://formsubmit.co/vicsdago@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://gonzacebre.github.io/ghr/html/recibiConsulta.html" class="form-control">
-                    <input type="hidden" name="_subject" value="Consulta desde la web GHR">
-                    <ul>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Nombre y apellido*" class="form-control"value
-                                required>
-                        </li>
-                        <li>
-                            <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico*"class="form-control" value
-                                required>
-                        </li>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Teléfono*"class="form-control" value required>
-                        </li>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Asunto*"class="form-control" value required>
-                        </li>
-                        <li>
-                            <textarea id="msg" name="user_message" placeholder="Tu consulta*"class="form-control" value required></textarea>
-                        </li>
-                    </ul>
-                    <button type="submit" class="contactanos-boton-form ms-auto" class="form-control">Enviar Consulta</button>
-                </form>
-            </div>
-<div class="d-flex align-items-center justify-content-center ">
+            <form action="https://formsubmit.co/vicsdago@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://gonzacebre.github.io/ghr/html/recibiConsulta.html"
+                    class="form-control">
+                <input type="hidden" name="_subject" value="Consulta desde la web GHR">
+                <ul>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Nombre y apellido*"
+                            class="form-control" value required>
+                    </li>
+                    <li>
+                        <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico*"
+                            class="form-control" value required>
+                    </li>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Teléfono*" class="form-control" value
+                            required>
+                    </li>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Asunto*" class="form-control" value
+                            required>
+                    </li>
+                    <li>
+                        <textarea id="msg" name="user_message" placeholder="Tu consulta*" class="form-control" value
+                            required></textarea>
+                    </li>
+                </ul>
+                <button type="submit" class="contactanos-boton-form ms-auto" class="form-control">Enviar
+                    Consulta</button>
+            </form>
+        </div>
+        <div class="d-flex align-items-center justify-content-center ">
             <img src="../media/img/Consulta.jpg" alt="" class="banner-contacto">
-</div>
-        </section>
+        </div>
+    </section>
 
 
 
@@ -169,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 footer-servicios">
                 <p class="subtitulo-footer">Servicios</p>
                 <div class="d-flex justify-content-between servicios-footer">
                     <ul>
