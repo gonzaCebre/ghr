@@ -98,9 +98,10 @@ main {
     main .subtitulo {
       font-size: 20px; }
     main .contactanos-boton {
-      font-size: 14px;
-      width: 167px;
-      height: 48px; } }
+      font-size: 18px;
+      width: 40%;
+      height: 60px;
+      padding: 10px; } }
 
 /* @media (min-width: 1200px){
     .banner {
@@ -127,10 +128,10 @@ main {
   font-size: 24px;
   padding: 13px 64px;
   border: 1px solid #1e2c51;
-  border-radius: 25px; }
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(104, 104, 104, 0.1); }
   .servicios:hover {
-    color: white;
-    background-color: #1e2c51; }
+    color: black; }
 
 .servicios-contenedor {
   display: flex;
@@ -164,7 +165,10 @@ main {
     text-align: center;
     margin-bottom: 20px; }
   .servicios {
-    font-size: 20px; }
+    font-size: 16px;
+    width: 60%;
+    display: flex;
+    justify-content: center; }
   .servicios-contenedor {
     flex-direction: column;
     align-items: flex-start;
@@ -173,7 +177,11 @@ main {
     .servicios-contenedor p {
       font-size: 14px; }
     .servicios-contenedor .sucesiones {
-      justify-content: flex-start; } }
+      justify-content: flex-start; }
+  .servicios-container {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0; } }
 
 @media (min-width: 768px) {
   .sucesiones {
@@ -458,8 +466,13 @@ footer {
   .sub-quienes {
     font-size: 16px; }
   .valores-contenedor {
+    width: 100vw;
+    padding-left: 5rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start; }
   .quienes {
     font-size: 16px;
     padding: 0 30px;

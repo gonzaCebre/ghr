@@ -38,6 +38,13 @@ form> ul {
     font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .parrafo-alinear{
     width: 337px;
     text-align: justify;
@@ -135,9 +142,27 @@ margin-bottom: 20px; }
     }
     .redes-contacto{
         display: flex; 
+        flex-direction: row;
         align-items: flex-start !important;
+        justify-content: flex-start;
+
         margin-left: 2rem;
-        }
+    }
+
+    .contactos {
+        display: flex;
+        align-items: center;
+    }
+
+    .mensaje {
+        margin-left: -17px;
+    }
+
+    .contactos p {
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
     .servicios-areas{
         display: grid;
         grid-template-columns: 100%;
@@ -154,7 +179,9 @@ margin-bottom: 20px; }
 .grid-contacto{
     display: flex;
 flex-direction: column !important;
-justify-content: start !important;
+/* justify-content: start !important; */
+justify-content: center;
+align-items: center;
 }
 .redes-icono-contacto {
     text-decoration: none;
