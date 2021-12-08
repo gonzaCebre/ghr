@@ -3,12 +3,22 @@
     margin-bottom: 60px;
 }
 
+.servicios-link {
+    text-decoration: none;
+    color: $colorAcentoOscuro;
+}
+
 .servicios {
     width: fit-content;
     font-size: 24px;
     padding: 13px 64px;
     border: 1px solid $colorAcentoOscuro;
     border-radius: 25px;
+
+    &:hover {
+        color: white;
+        background-color: $colorAcentoOscuro;
+    }
 }
  
 .servicios-contenedor {

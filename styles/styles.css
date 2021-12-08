@@ -118,12 +118,19 @@ main {
   text-align: justify;
   margin-bottom: 60px; }
 
+.servicios-link {
+  text-decoration: none;
+  color: #1e2c51; }
+
 .servicios {
   width: fit-content;
   font-size: 24px;
   padding: 13px 64px;
   border: 1px solid #1e2c51;
   border-radius: 25px; }
+  .servicios:hover {
+    color: white;
+    background-color: #1e2c51; }
 
 .servicios-contenedor {
   display: flex;
@@ -233,7 +240,7 @@ header {
       background-color: transparent;
       margin-top: 10px;
       margin-bottom: 20px; }
-      header .navbar .redes-icono {
+      header .navbar .redes .redes-icono {
         text-decoration: none;
         width: 48px;
         height: 48px;
@@ -241,20 +248,24 @@ header {
         display: flex;
         justify-content: center;
         align-items: center; }
-        header .navbar .redes-icono-logo {
+        header .navbar .redes .redes-icono-logo {
           width: 32px;
           height: 32px; }
-        header .navbar .redes-icono .insta {
+        header .navbar .redes .redes-icono .insta {
           background-image: url(../media/redes/instagram2.png); }
-          header .navbar .redes-icono .insta:hover {
+          header .navbar .redes .redes-icono .insta:hover {
             background-image: url(../media/redes/instagram2-hover.png); }
-        header .navbar .redes-icono .wsp {
+        header .navbar .redes .redes-icono .facebook {
+          background-image: url(../media/redes/face.png); }
+          header .navbar .redes .redes-icono .facebook:hover {
+            background-image: url(../media/redes/face2.png); }
+        header .navbar .redes .redes-icono .wsp {
           background-image: url(../media/redes/whatsapp2.png); }
-          header .navbar .redes-icono .wsp:hover {
+          header .navbar .redes .redes-icono .wsp:hover {
             background-image: url(../media/redes/whatsapp2-hover.png); }
-        header .navbar .redes-icono .correo {
+        header .navbar .redes .redes-icono .correo {
           background-image: url(../media/redes/correo-abierto2.png); }
-          header .navbar .redes-icono .correo:hover {
+          header .navbar .redes .redes-icono .correo:hover {
             background-image: url(../media/redes/correo-abierto2-hover.png); }
 
 .logo {
@@ -267,7 +278,7 @@ footer {
   footer .subtitulo-footer {
     font-size: 16px;
     font-weight: 600;
-    color: #1e2c51; }
+    color: black; }
   footer .footer-contactanos {
     height: 100px; }
     footer .footer-contactanos .redes-icono {
@@ -283,9 +294,38 @@ footer {
       font-weight: 600; }
       footer .derecha .asesoramiento a {
         text-decoration: none;
-        color: #1e2c51; }
+        color: black; }
         footer .derecha .asesoramiento a:hover {
-          color: black; }
+          color: #1e2c51; }
+  footer .seguinos-footer a {
+    text-decoration: none; }
+  footer .redes-icono {
+    color: black;
+    text-decoration: none; }
+    footer .redes-icono p {
+      margin-left: 10px; }
+    footer .redes-icono-logo {
+      width: 32px;
+      height: 32px; }
+    footer .redes-icono .insta {
+      background-image: url(../media/redes/instagram2.png); }
+      footer .redes-icono .insta:hover {
+        background-image: url(../media/redes/instagram2-hover.png); }
+    footer .redes-icono .facebook {
+      background-image: url(../media/redes/face.png); }
+      footer .redes-icono .facebook:hover {
+        background-image: url(../media/redes/face2.png); }
+    footer .redes-icono .wsp {
+      background-image: url(../media/redes/whatsapp2.png); }
+      footer .redes-icono .wsp:hover {
+        background-image: url(../media/redes/whatsapp2-hover.png); }
+    footer .redes-icono .correo {
+      background-image: url(../media/redes/correo-abierto2.png); }
+      footer .redes-icono .correo:hover {
+        background-image: url(../media/redes/correo-abierto2-hover.png); }
+  footer .redes-icono-texto {
+    margin-left: 10px;
+    color: black; }
 
 @media (max-width: 768px) {
   header {
@@ -316,6 +356,15 @@ footer {
     .redes-footer .subtitulo-footer {
       margin-right: 15px;
       padding-top: 0; }
+  .seguinos-footer {
+    flex-direction: column;
+    align-items: flex-start; }
+    .seguinos-footer .redes-icono {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .seguinos-footer .redes-icono-texto {
+        margin-bottom: 10px; }
   .seguinos {
     margin-top: -7px; } }
 
@@ -345,8 +394,30 @@ footer {
   .activo {
     font-weight: 600;
     color: black; }
+  .footer-contacto {
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+  .footer-servicios {
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
   .seguinos-footer {
-    max-width: 250px; }
+    max-width: 250px;
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+    .seguinos-footer .seguinos {
+      margin-top: 0; }
+    .seguinos-footer .redes-icono {
+      display: flex;
+      align-items: center; }
   .navbar-responsive {
     display: flex;
     flex-direction: column;
@@ -358,7 +429,11 @@ footer {
     margin-left: 20px; }
     .footer-servicios ul li {
       line-height: 14px;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px; }
+  .footer-contactanos .redes-icono {
+    flex-direction: row; }
+  .esconder {
+    display: none; } }
 
 .hr-valores {
   width: 117px;
