@@ -15,7 +15,7 @@ header{
             margin-top: 10px;
             margin-bottom: 20px;
             
-            &-icono {
+            .redes-icono {
                 text-decoration: none;
                 width: 48px;
                 height: 48px;
@@ -36,6 +36,14 @@ header{
                         background-image: url(../media/redes/instagram2-hover.png);
                     }
                 }
+
+                .facebook {
+                    background-image: url(../media/redes/face.png);
+            
+                    &:hover {
+                        background-image: url(../media/redes/face2.png);
+                    }
+                }
             
                     .wsp {
                         background-image: url(../media/redes/whatsapp2.png);
@@ -52,8 +60,8 @@ header{
                             background-image: url(../media/redes/correo-abierto2-hover.png);
                         }
                     }
-                }
             }
+        }
     }
 
     
@@ -68,10 +76,11 @@ footer {
     height: 180px;   
     border-top: 4px solid rgb(30, 44, 81);
 
+
     .subtitulo-footer {
         font-size: 16px;
         font-weight: 600;
-        color: $colorAcentoOscuro;
+        color: black;
     }
 
     .footer-contactanos {
@@ -98,13 +107,69 @@ footer {
 
             a{
                 text-decoration: none;
-                color: $colorAcentoOscuro;
+                color: black;
 
                 &:hover {
-                    color: black;
+                    color: $colorAcentoOscuro;
                 }
             }
         }
+    }
+
+    .seguinos-footer a{
+        text-decoration: none;
+    }
+
+    .redes-icono {
+
+        color: black;
+        text-decoration: none;
+
+        p {
+            margin-left: 10px;
+        }
+    
+        &-logo {
+            width: 32px;
+            height: 32px;
+        }
+    
+        .insta {
+            background-image: url(../media/redes/instagram2.png);
+    
+            &:hover {
+                background-image: url(../media/redes/instagram2-hover.png);
+            }
+        }
+
+        .facebook {
+            background-image: url(../media/redes/face.png);
+    
+            &:hover {
+                background-image: url(../media/redes/face2.png);
+            }
+        }
+    
+            .wsp {
+                background-image: url(../media/redes/whatsapp2.png);
+    
+                &:hover {
+                    background-image: url(../media/redes/whatsapp2-hover.png);
+                }
+            }
+    
+            .correo {
+                background-image: url(../media/redes/correo-abierto2.png);
+    
+                &:hover {
+                    background-image: url(../media/redes/correo-abierto2-hover.png);
+                }
+            }
+    }
+
+    .redes-icono-texto {
+        margin-left: 10px;
+        color: black;
     }
 
 }
@@ -172,6 +237,21 @@ footer {
         }
     }
 
+    .seguinos-footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .redes-icono{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &-texto {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
 
         .seguinos {
             margin-top: -7px;
@@ -200,6 +280,8 @@ footer {
     footer p {
         font-size: 14px;
     }
+
+
 
 
 }
@@ -231,9 +313,38 @@ footer {
     }
 
 
+    .footer-contacto {
+        height: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer-servicios {
+        height: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
 
     .seguinos-footer {
         max-width: 250px;
+        height: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        .seguinos {
+            margin-top: 0;
+        }
+
+        .redes-icono {
+            display: flex;
+            align-items: center;
+        }
     }        
     
 
@@ -256,5 +367,16 @@ footer {
             line-height: 14px;
             margin-bottom: 5px;
         }
+    }
+
+    .footer-contactanos {
+
+        .redes-icono{
+
+        flex-direction: row;
+        }
+    }
+    .esconder {
+        display: none;
     }
 }
