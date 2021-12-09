@@ -14,10 +14,10 @@
     padding: 13px 64px;
     border: 1px solid $colorAcentoOscuro;
     border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(104, 104, 104, 0.1);
 
     &:hover {
-        color: white;
-        background-color: $colorAcentoOscuro;
+        color: black;
     }
 }
  
@@ -64,8 +64,14 @@
     }
 
     .servicios {
-        font-size: 20px;
+        font-size: 16px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
     }
+
+
+
     .servicios-contenedor {
         flex-direction: column;
         align-items: flex-start;
@@ -79,6 +85,12 @@
         .sucesiones {
             justify-content: flex-start;
         }
+    }
+
+    .servicios-container{
+        width: 100%; 
+        padding-left: 0;
+        margin-left: 0;
     }
 }
 

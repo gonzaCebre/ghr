@@ -30,8 +30,13 @@
         font-size: 16px;
     }
     .valores-contenedor {
+        width: 100vw;
+        padding-left: 5rem;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
     }    
 
     .quienes {
