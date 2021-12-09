@@ -171,4 +171,12 @@ justify-content: start !important;
     justify-items: center;
     align-items: center;
 }
+.texto-recibi{
+    
+    font-size: 20px;
+}
+.contenedor-recibi{    
+    width: 320px;
+    margin-bottom: 50px 
+}
 }
